@@ -31,10 +31,11 @@ body {
 }
 .nav_list {
     display: flex;
-    margin-top: 0px;
+    justify-content: center;
+    margin: 0px 100px 0px 0px;
     gap: 40px;
     list-style-type: none;
-    margin-bottom: 5px;
+    
 }
 li:hover {
     color: rgb(84, 255, 124) ;
@@ -63,13 +64,20 @@ li:hover {
 .dropDown_heading {
     color:white;
     position: absolute;
-    top: 0;
+    top: 60%;
     left: 17%;
     margin-top: 0px;
     font-size: 3em;
     font-weight: 800;
     letter-spacing: 0px;
+    animation-name: dropdown_title;
+    animation-duration: 2s;
 }
+@keyframes dropdown_title {
+    0% { opacity: 0; top:0;}
+    100% { opacity:1; top:60%;}
+    }
+
 /*--- deli sections ------------------*/
 
 .featured_header {
@@ -119,6 +127,7 @@ li:hover {
     background-color: rgb(3, 181, 3) ;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .view_btn:hover {
     transform: scale(1.1);
@@ -131,13 +140,14 @@ li:hover {
     flex-direction: column;
     gap: 0px;
     position:absolute;
-    top: 55%;
+    top: 53%;
     right: 0;
 }
 .fa-brands {
     color: rgb(3, 181, 3) ;
     font-size: 50px;
     margin-right: 5px;
+    cursor: pointer;
 }
 #facebook_icon:hover {
     color: rgb(0, 140, 255);
@@ -157,21 +167,23 @@ li:hover {
 /*--- Contact form ------------------ */
 .form_container {
     position: fixed;
-    bottom: -100;
+    bottom: 0;
     z-index: 1;
     right: 0;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(60, 60, 60);
-    width: 350px;
+    width: 250px;
     margin-right: 10px;
+    margin-bottom: -360px;
     border-radius: 10px 10px 0px 0px;
 }
 .form_container:hover {
     bottom: 0px;
+    margin-bottom: 0;
 }
 .contact_us_container {
     display: flex;
@@ -181,13 +193,14 @@ li:hover {
     background-color: black;
 }
 #contact_icon {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 100;
     margin-left: 0px;
+    margin-top: 5px;
     margin-right: 0.5em;
 }
 .contact_us_txt {
-    font-size: 2em;
+    font-size: 1.4em;
     margin: 0px;
 }
 .input_el {
@@ -208,6 +221,7 @@ li:hover {
     border: none;
     border-radius: 3px;
     margin-bottom: 1.4em;
+    cursor: pointer;
 }
 #submit_btn:hover {
     color: whitesmoke;
