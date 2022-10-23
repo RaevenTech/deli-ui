@@ -9,6 +9,9 @@ body {
 }
 /*---  NavBar -----------------------------------*/
 .navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
     color: white;
     display: flex;
     align-items: center;
@@ -117,6 +120,11 @@ li:hover {
     border: none;
     border-radius: 5px;
 }
+.view_btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(1, 204, 1);
+
+}
 /*--- Social media  -------------------------*/
 .social_media {
     display: flex;
@@ -148,6 +156,63 @@ li:hover {
 }
 /*--- Contact form ------------------ */
 .form_container {
+    position: fixed;
+    bottom: -100;
+    z-index: 1;
+    right: 0;
+    transition: 0.5s;
+    color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+    width: 350px;
+    margin-right: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.form_container:hover {
+    bottom: 0px;
+}
+.contact_us_container {
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+#contact_icon {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-left: 0px;
+    margin-right: 0.5em;
+}
+.contact_us_txt {
+    font-size: 2em;
+    margin: 0px;
+}
+.input_el {
+    display: flex;
+    flex-direction: column;
+}
+.input:focus {
+    outline: none;
+}
+#textarea_el {
+    margin-top: 10px;
+}
+#textarea_el::placeholder {
+    padding-left: 1em;
+}
+#submit_btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1.4em;
+}
+#submit_btn:hover {
+    color: whitesmoke;
+    background-color: rgb(3, 181, 3);
+}
+input::placeholder {
+    padding-left: 1em;
 }

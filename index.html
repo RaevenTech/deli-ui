@@ -24,6 +24,7 @@
         <title>Deli Online</title>
     </head>
     <body>
+        <!---------- This is the navigation bar section ---------------------------------->
         <section id="navigation_section">
             <nav class="navbar">
                 <h1 class="nav_logo">Deli Online</h1>
@@ -35,6 +36,7 @@
                 </ul>
             </nav>
         </section>
+        <!---------- This is the hero section End ---------------------------------->
         <section id="hero_section">
             <div class="hero_el">
                 <img
@@ -42,13 +44,16 @@
                     alt="deli"
                     class="hero_img"
                 />
+                <!---------- This is the dropdown title ---------------------------------->
                 <h1 class="dropDown_heading">FOR DELI FRESH PRODUCTS ONLINE</h1>
             </div>
         </section>
+        <!---------- This is the deli header section ---------------------------------->
         <header>
             <h1 class="featured_header">Deli Selections</h1>
             <hr width=" 80% " />
         </header>
+        <!---------- This is the deli section options section ---------------------------------->
         <section id="deli_sections">
             <div class="deli_categories">
                 <div class="deli_category">
@@ -80,6 +85,7 @@
                 </div>
             </div>
         </section>
+        <!---------- This is the social media btns section ---------------------------------->
         <section id="social_media_section">
             <div class="social_media">
                 <div class="facebook">
@@ -102,41 +108,49 @@
                 </div>
             </div>
         </section>
-        <!---------- this is the contact form section  ---------------------------------->
+        <!---------- This is the contact form section  ---------------------------------->
         <section class="contact_us_form">
             <div class="form_container">
                 <div class="contact_us_container">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p class="contact_us_txt">contact Us</p>
+                    <i id="contact_icon" class="fa-regular fa-envelope"></i>
+                    <p class="contact_us_txt">Contact Us</p>
                 </div>
                 <form id="contact_form" type="submit">
-                    <div>
+                    <div class="input_el">
                         <label class="input_lable" for="First_name">Name</label>
                         <input
+                            class="input"
                             type="text"
                             id="first_name"
                             placeholder="First Name"
                         />
                     </div>
-                    <div>
+                    <div class="input_el">
                         <label class="input_lable" for="First_name"
                             >Last Name</label
                         >
                         <input
+                            class="input"
                             type="text"
                             id="last_name"
                             placeholder="Last Name"
                         />
                     </div>
-                    <div>
+                    <div class="input_el">
                         <label class="input_lable" for="email">Email</label>
-                        <input type="email" id="Email" placeholder="Email" />
+                        <input
+                            class="input"
+                            type="email"
+                            id="Email"
+                            placeholder="Email"
+                        />
                     </div>
                     <div>
                         <textarea
+                            class="input"
                             rows="10"
                             type="text"
-                            id="Subject"
+                            id="textarea_el"
                             placeholder="How can we help?"
                             name="contact_us"
                             id="textarea"
